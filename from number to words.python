@@ -5,18 +5,22 @@ x= {0:"",1: 'One', 2: 'Two', 3: 'Three', 4: 'Four', 5: 'Five', \
 
 z = {0:'',2:'Twenty', 3:'Thirty', 4:'Forty', 5:'Fifty', 6:'Sixty', 7:'Seventy',8: 'Eighty',9: 'Ninety'}
 
+#enter a number from 1 to 9999
 n=int(input("enter a number: "))
+#make a variable that converts the int to str
 numb=str(n)
+#o is a var that contains the length of numb
 o=len(numb)
+#printing the numbers form 1 to 19
 if (n >= 1) and (n <= 19):
     b=int(numb)
     print(x[b])
-
+#printing numbers that have 2 digit and more than 19
 elif o==2 and (n>19):
     num=int(numb[0])
     num2=int(numb[1])
     print(z[num]+" "+x[num2])
-
+#print number that have 3 digits
 elif o==3:
     num=int(numb[0])
     num2=int(numb[1])
@@ -31,6 +35,7 @@ elif o==3:
         print(x[num]+" hundred and "+x[num3])
     else:
         print(x[num]+" hundred and "+z[num2]+" "+x[num3])
+#printing the numbers that have 4 digits
 elif o==4:
     num=int(numb[0])
     num2=int(numb[1])
